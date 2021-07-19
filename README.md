@@ -152,4 +152,10 @@ How it works is that the public key you put on Github,and everytime you want to 
 ```
 cat testkey.pub
 ```
-git
+<hr>
+```
+git push origin master
+```
+<em>origin</em> - is an option set for here.
+- basically a word that stands for the location of our Git repository
+<em>Master</em> - is the branch that we want to push to.
