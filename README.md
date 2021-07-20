@@ -219,6 +219,32 @@ sample:
   > this will update github source code or the code in the github repository with the changes that we made locally.
   <hr>
 
+  ## Local Changes
+
+>git status <br>
+
+displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history.
+>git diff
+
+git diff is a multi-use Git command that when executed runs a diff function on Git data sources.
+<br>changes to tracked files
+>git add .
+
+Add all current changes to the next commit
+>git add -p \<file>
+
+Add some changes in file to the next commit
+>git commit -a
+
+Commit all local changes in tracked files
+>git commit
+
+Commit previously stagged changes
+>git commit --amend
+
+change the last commit
+(note-dont amend published commits)
+
 # Git Branching
 
 <strong>Git branches</strong> - are effectively a pointer to a snapshot of your changes. ... The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. <br>
@@ -267,3 +293,30 @@ Changes to be committed:
 user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (feature-readme-instructions)
 $
 ```
+
+## Branches & Tags
+
+>git branch -av <br>
+
+List all existing branches
+>git checkout \<name_of_branch>
+
+Switch Head branch
+>git branch \<new_branch> or git checkout -b \<new_branch>
+
+Create a new branch based on your current Head
+>git checkout --track <remote/branch>
+
+Create a new tracking branch based on a remote branch
+>git branch -d \<name_of_branch>
+
+Delete a local branch
+>git tag \<tag-name>
+
+Mark the current commit with a tag
+
+## What is a <strong>pull request</strong> or PR <hr>
+
+basically a request to have your code pulled into another branch.
+A pull request is a method of submitting contributions to an open development project. ... A pull request occurs when a developer asks for changes committed to an external repository to be considered for inclusion in a project's main repository.
+
