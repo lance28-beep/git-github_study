@@ -216,8 +216,42 @@ sample:
 - stage changes <code>git add</code>
 - commit changes <code>git commit</code>
 - push changes <code>git push</code>
+
   > this will update github source code or the code in the github repository with the changes that we made locally.
+
   <hr>
+
+  ## Local Changes
+
+> git status <br>
+
+displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history.
+
+> git diff
+
+git diff is a multi-use Git command that when executed runs a diff function on Git data sources.
+<br>changes to tracked files
+
+> git add .
+
+Add all current changes to the next commit
+
+> git add -p \<file>
+
+Add some changes in file to the next commit
+
+> git commit -a
+
+Commit all local changes in tracked files
+
+> git commit
+
+Commit previously stagged changes
+
+> git commit --amend
+
+change the last commit
+(note-dont amend published commits)
 
 # Git Branching
 
@@ -242,4 +276,59 @@ A feature branch is a copy of the main codebase where an individual or team of s
 <strong>Hotfix Branches</strong>
 Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on main instead of develop . This is the only branch that should fork directly off of main
 
-> git branch
+> git branch - list all existing branches <br>
+> git checkout \<branch\> <br>
+> git checkout -b feature-readme-instructions
+> git switch -b feature-readme-instructions
+
+```
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (master)
+$ git switch feature-readme-instructions
+Switched to branch 'feature-readme-instructions'
+M       README.md
+
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (feature-readme-instructions)
+$ git add .
+
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (feature-readme-instructions)
+$ git status
+On branch feature-readme-instructions
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (feature-readme-instructions)
+$
+```
+
+## Branches & Tags
+
+> git branch -av <br>
+
+List all existing branches
+
+> git checkout \<name_of_branch>
+
+Switch Head branch
+
+> git branch \<new_branch> or git checkout -b \<new_branch>
+
+Create a new branch based on your current Head
+
+> git checkout --track <remote/branch>
+
+Create a new tracking branch based on a remote branch
+
+> git branch -d \<name_of_branch>
+
+Delete a local branch
+
+> git tag \<tag-name>
+
+Mark the current commit with a tag
+
+## What is a <strong>pull request</strong> or PR <hr>
+
+basically a request to have your code pulled into another branch.
+A pull request is a method of submitting contributions to an open development project. ... A pull request occurs when a developer asks for changes committed to an external repository to be considered for inclusion in a project's main repository.
