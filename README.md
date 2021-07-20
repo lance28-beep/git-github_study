@@ -242,4 +242,28 @@ A feature branch is a copy of the main codebase where an individual or team of s
 <strong>Hotfix Branches</strong>
 Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on main instead of develop . This is the only branch that should fork directly off of main
 
-> git branch
+> git branch - list all existing branches <br>
+> git checkout \<branch\> <br>
+> git checkout -b feature-readme-instructions
+> git switch -b feature-readme-instructions
+
+```
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (master)
+$ git switch feature-readme-instructions
+Switched to branch 'feature-readme-instructions'
+M       README.md
+
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (feature-readme-instructions)
+$ git add .
+
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (feature-readme-instructions)
+$ git status
+On branch feature-readme-instructions
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+user@Lance MINGW64 ~/Desktop/Git and Github/git-github_study (feature-readme-instructions)
+$
+```
