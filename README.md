@@ -155,7 +155,7 @@ There are two test key that was generated<br>
 
 - testkey - private key,and it is the one that you have to keep secure on your local machine
 - testkey.pub - the key that you're going to upload to your github interface.<br>
-- pub people to see this key.
+- pub stands for public,its called your public key,which means that its okay for other people to see this key.
 
 How it works is that the public key you put on Github,and everytime you want to connect to GitHub or push your code on GitHub or use your account via you local machine, you use your private key to show Github,that you are the one that generated this public key.Its a mathematical proof that only this private key could have generated this public key.
 
