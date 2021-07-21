@@ -356,6 +356,7 @@ we want to push our code live to a remote repository where our project is hosted
 <hr>
 
 <code>git log --oneline</code>
+
 ```
 PS C:\Users\user\Desktop\Git and Github\git-github_study> git log --oneline
 8b374bb (HEAD -> about-terminal, master) added there
@@ -373,8 +374,6 @@ b7d8f7c Delete README.md
 b5251ee documentation update
 4765de5 adding mynotes and index.html
 ```
-
-
 
 ## SSH Keys
 
