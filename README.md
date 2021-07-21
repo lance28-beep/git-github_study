@@ -35,6 +35,9 @@ the management of changes to documents, computer programs,large websites, and ot
 - <em> push </em> - Upload Git commits to a remote repo, like Github
 - <em> pull </em> - Download changes from remote repo to your local machine, the opposite of push
 
+## other terms
+- <em>Unstaged changes</em> are changes that are not tracked by the Git. For example, if you copy a file or modify the file. Git maintains a staging area(also known as index) to track changes that go in your next commit. ... The next git commit will transfer all items from staging into your repository.
+
 # Create Account
 
 [github.com](https://github.com/)
@@ -342,3 +345,46 @@ generally the workflow has been <code>git add</code> and then file name or perio
 > git commit -am <br>
 
 <code>-am</code> - dash a stands for add and m at the same time for message
+
+> git merge master
+
+remember how i sadi before that merging locally wasnt the regular pattern.while it isn't for merging branches into master.but master gets updated as you go along as you're working on your project,because maybe other people are merging into master and you don't have those changes in your branch.But you dont want to get too far behind the master as you're working because then its going to be really difficult to merge later.so as changes are made to master in the GitHub repo,you're going to want to pull those down to your local master branch.
+
+<hr>
+
+## Undoing in Git
+
+Undo Commit (After git commit, Before git push)
+If you have committed changes to a file (i.e. you have run both git add and git commit ), and want to undo those changes, then you can use <strong>git reset HEAD~</strong> to undo your commit.
+
+<i>So what if we make a mistake?what if we accidentally add something or commit something to git,and we didn't mean to do it,we can actully undo our stages or our commits</i>
+
+>git reset
+
+we can either do git reset with no arguments,or I can say git reset and just the name of the file that we want to onstage.
+
+```
+$ git reset
+Unstaged changes after reset:
+M       README.md
+M       index.html
+```
+
+>git reset HEAD~1
+
+what head means to GIT is a pointer to the last commit.<br>
+so I'm telling it to do something with the last commit<br>
+<code>~1</code> which is telling git instead of pointing to this last commit that I just made,right here,I want you to go back one commit further,and head will now point back one commit further meaning it will completely undo the commit that we just made
+-unstaged and uncommitted those last changes
+
+<hr>
+
+## Forking in git
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png" width="500">
+
+its going to make a complete copy of the repository.<br>
+<strong>Why would you want to Fork?</strong>
+we probably don't want to fork our own repo because we already have full access to all of the code.<br>
+but for other people's repos.
