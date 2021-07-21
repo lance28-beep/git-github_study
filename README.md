@@ -152,7 +152,7 @@ There are two test key that was generated<br>
 
 - testkey - private key,and it is the one that you have to keep secure on your local machine
 - testkey.pub - the key that you're going to upload to your github interface.<br>
-- pub stands for public,its called your public key,which means that it's okay for other people to see this key.
+- pub people to see this key.
 
 How it works is that the public key you put on Github,and everytime you want to connect to GitHub or push your code on GitHub or use your account via you local machine, you use your private key to show Github,that you are the one that generated this public key.Its a mathematical proof that only this private key could have generated this public key.
 
@@ -332,3 +332,13 @@ Mark the current commit with a tag
 
 basically a request to have your code pulled into another branch.
 A pull request is a method of submitting contributions to an open development project. ... A pull request occurs when a developer asks for changes committed to an external repository to be considered for inclusion in a project's main repository.
+
+<hr>
+
+### notes
+
+generally the workflow has been <code>git add</code> and then file name or period dot everything in this directory.this time,there's a shortcut,<underline>because we've just modified one file.and the file has already been committed to git in the past,which is why it says modified and not created.
+
+> git commit -am <br>
+
+<code>-am</code> - dash a stands for add and m at the same time for message
