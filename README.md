@@ -2,7 +2,8 @@
 
 Source Study:
 [FreeCodeCamp](https://youtu.be/RGOj5yH7evk)/
-[FilipinoGuide-Terminal](https://youtu.be/bDxXRB66Xas)/[learngitbranching.js.org](https://learngitbranching.js.org/)
+[FilipinoGuide-Terminal](https://youtu.be/bDxXRB66Xas)/[learngitbranching.js.org](https://learngitbranching.js.org/)/
+[git-scm.com/](https://git-scm.com/)
 
 ## Bakit at paanu gumamit ng Terminal
 
@@ -285,6 +286,10 @@ the management of changes to documents, computer programs,large websites, and ot
 
 - <em>staging<em>A staging step in git allows you to continue making changes to the working directory, and when you decide you wanna interact with version control, it allows you to record changes in small commits.<br>
 - <em>Unstaged changes</em> are changes that are not tracked by the Git. For example, if you copy a file or modify the file. Git maintains a staging area(also known as index) to track changes that go in your next commit. ... The next git commit will transfer all items from staging into your repository.
+
+## What is github
+ang github is nag sserve sya as para bang google drive ng mga git repository.<br>
+coders can collaborate on code in github easier.<br>
 
 # Create Account
 
