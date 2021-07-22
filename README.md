@@ -364,6 +364,7 @@ user@Lance MINGW64 ~/Desktop/git-github_study (master)
 > git config --list
 
 - show all your git settings
+
 ```
 user@Lance MINGW64 ~/Desktop/git-github_study (master)
 $ git config --list
@@ -398,6 +399,7 @@ user@Lance MINGW64 ~/Desktop/git-github_study (master)
 ```
 
 configure your user name and user email
+
 ```
 user@Lance MINGW64 ~/Desktop/git-github_study (master)
 $git config --global user.name "Rolando Valle"
@@ -405,8 +407,10 @@ user@Lance MINGW64 ~/Desktop/git-github_study (master)
 $git config --global user.email "yourEmailHere"
 
 ```
+
 -when you are in a team.this will help your team to recognize who did the changes in repo.<br>
 -every change that you're going to make in your projects should be documented with your details
+
 ## What is github
 
 ang github is nag sserve sya as para bang google drive ng mga git repository.<br>
@@ -500,6 +504,48 @@ b7d8f7c Delete README.md
 b5251ee documentation update
 4765de5 adding mynotes and index.html
 ```
+
+## What is Git Tags
+
+- tagging in git or any other vcs refers to creating specific points in history for your repository/data.
+
+- this is usually done to mark release points.
+
+## Why should I create Tags
+
+- to mark release points for your code/dat
+- to create historic restore points
+
+## When to create Tags
+
+- When you want to create a release point for a stable version of your code
+- When you want to create a historic point for your code/data that you can refer at any future time(to restore your data)
+
+## How to create Tags
+
+[1] Checkout the branch where you want to create the tag
+
+> git checkout \<branch name>
+
+[2] Create tag with some name<br>
+
+> git tag \<tagname>
+
+<b>two types of creating tag</b><br>
+
+- Lightweight tag
+
+```
+git tag v1.0
+```
+
+- annotated
+
+```
+git tag -a v1.1 -m "my version 1"
+```
+
+in annotated tag you can give some message and it also contain all the information about the tagger and it will be stored as a complete git object in git Repositoru
 
 ## SSH Keys
 
