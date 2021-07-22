@@ -262,6 +262,80 @@ to solve those problems we have <strong>Source Control Management (SCM)</strong>
 
 the management of changes to documents, computer programs,large websites, and other collections of information.
 
+## Version Control
+
+- Keep Versions of every file/directory
+- Documents changes with descriptive message
+- Displaying differences
+
+## install git
+
+[https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+git version
+
+```
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+$ ^C
+
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+```
+
+git commands:
+
+```
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+
+```
+
 ## Terms
 
 - <em>Directory</em> - Folder
@@ -287,7 +361,54 @@ the management of changes to documents, computer programs,large websites, and ot
 - <em>staging<em>A staging step in git allows you to continue making changes to the working directory, and when you decide you wanna interact with version control, it allows you to record changes in small commits.<br>
 - <em>Unstaged changes</em> are changes that are not tracked by the Git. For example, if you copy a file or modify the file. Git maintains a staging area(also known as index) to track changes that go in your next commit. ... The next git commit will transfer all items from staging into your repository.
 
+> git config --list
+
+- show all your git settings
+```
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+user.name=Lance Valle
+user.email=vallelance8@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=git@github.com:lance28-beep/git-github_study.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+
+```
+
+configure your user name and user email
+```
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+$git config --global user.name "Rolando Valle"
+user@Lance MINGW64 ~/Desktop/git-github_study (master)
+$git config --global user.email "yourEmailHere"
+
+```
+-when you are in a team.this will help your team to recognize who did the changes in repo.<br>
+-every change that you're going to make in your projects should be documented with your details
 ## What is github
+
 ang github is nag sserve sya as para bang google drive ng mga git repository.<br>
 coders can collaborate on code in github easier.<br>
 
