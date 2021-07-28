@@ -900,10 +900,19 @@ revert a modified file
     <img src='./img/rb.PNG'  width='500'><br>
 
 ## github issues & labels<br>
+
 <img src='./img/issues.PNG'  width='500'><br>
 
 - GitHub Issues is a tracking tool that is integrated with your GitHub repository. Use GitHub Issues to focus on important tasks and keep plans up to date simultaneously. Every agile team needs to organize its work, but no one wants to stop working in order to track work
 
 - github todo list
+
 ### labels
+
 <img src='./img/labels.PNG'  width='500'><br>
+
+## .gitignore
+
+> create a file name <code>.gitignore</code>
+> build/
+> \*.txt //all files with .txt wont be part of commit or push
