@@ -918,21 +918,52 @@ revert a modified file
 > \*.txt //all files with .txt wont be part of commit or push
 
 ## Introduction
+
 - Strengthen code git concepts
 - Visualizing Material
-<img src='./img/vis.PNG'  width='500'><br>
+  <img src='./img/vis.PNG'  width='500'><br>
 
 ## Untrated State
+
 <img src='./img/untracked.PNG'  width='500'><br>
 -untracked by git or this wil be not yet documented by git<br>
 <img src='./img/untracked2.PNG'  width='500'><br>
 
 ## Tracking New Files
+
 <img src='./img/Tracked.PNG'  width='500'><br>
+
 > git add \<file>
 
 <img src='./img/Tracked2.PNG'  width='500'><br>
 
 ## Staging Modified Files
- <img src='./img/staged.PNG'  width='500'><br>
-  <img src='./img/staged2.PNG'  width='500'><br>
+
+<img src='./img/staged.PNG'  width='500'><br>
+<img src='./img/staged2.PNG'  width='500'><br>
+
+## Two States After Staged
+
+<img src='./img/commiiting.PNG'  width='500'><br>
+<img src='./img/commiiting2.PNG'  width='500'><br>
+
+## Branching : Full Introduction to Merging
+
+> git checkout -b feature
+
+- creating branch
+
+> git checkout feature
+
+- checkout branch
+
+## git status short
+
+> git status --short
+
+<img src='./img/gitstatus.PNG' width='500'>
+<br>
+
+
+## git log --> going further
+> git log 
