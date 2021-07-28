@@ -831,3 +831,79 @@ its going to make a complete copy of the repository.<br>
 <strong>Why would you want to Fork?</strong>
 we probably don't want to fork our own repo because we already have full access to all of the code.<br>
 but for other people's repos.
+
+## <code>from Udemy notes:</code>
+
+## unstaging a staged file in git
+
+un-stage or how to take it from the stagina area.
+
+> git restore --staged \<file>
+> git reset HEAD \<file>
+
+## unmodifying files - revert last commit operation in git
+
+revert a modified file
+
+> git restore \<file>
+
+# GitHub:First Steps & Basics
+
+## Why we need Remote Version Control?
+
+- Version Control
+- Collaboration
+
+## Collaboration & Online Backup -Importance
+
+- Collaboration Importance<br>
+  <img src='./img/collaboration.PNG' width='500'>
+  <img src='./img/collaboration2.PNG' width='500'><br>
+  -and copy of your project online and not only in your computer
+
+## Choosing GitHub RVCS <br>
+
+<img src='./img/github.PNG' width='500'><br>
+<code>GitHub</code><br>
+
+- Microsoft acquired GitHub for $7.5 Billion Dollars
+- Considered to be the largest Community of Developers in the world.
+  - Users: Over 40 Million!
+  - Repositories: Over 100 Million!
+    <code>
+    " It's a Git Repositories Hosting Service that has <u>code collaboration </u> and <u>version control</u> tools for Repositories Management"
+    </code>
+
+# GitHub:Commands & Functionalities
+
+## Trying to push local to remote
+
+> git init
+> git remote add origin \<SSH repo>
+> git remote -v
+
+## SSH
+
+- Secure Shell<br>
+  <img src='./img/secure-connection.PNG' width='500'>
+  <img src='./img/sshn.PNG'  width='500'>
+  <img src='./img/ssh-keygen.PNG'  width='500'><br>
+
+## Raw Blame History
+
+- raw
+  - used to copy code<br>
+- blame
+  - used to view the author of the code<br>
+- History
+  - view code history of commits in a given file<br>
+    <img src='./img/rb.PNG'  width='500'><br>
+
+## github issues & labels<br>
+<img src='./img/issues.PNG'  width='500'><br>
+
+- GitHub Issues is a tracking tool that is integrated with your GitHub repository. Use GitHub Issues to focus on important tasks and keep plans up to date simultaneously. Every agile team needs to organize its work, but no one wants to stop working in order to track work
+
+- github todo list
+### labels
+<img src='./img/labels.PNG'  width='500'><br>
