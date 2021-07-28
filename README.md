@@ -916,3 +916,23 @@ revert a modified file
 > create a file name <code>.gitignore</code>
 > build/
 > \*.txt //all files with .txt wont be part of commit or push
+
+## Introduction
+- Strengthen code git concepts
+- Visualizing Material
+<img src='./img/vis.PNG'  width='500'><br>
+
+## Untrated State
+<img src='./img/untracked.PNG'  width='500'><br>
+-untracked by git or this wil be not yet documented by git<br>
+<img src='./img/untracked2.PNG'  width='500'><br>
+
+## Tracking New Files
+<img src='./img/Tracked.PNG'  width='500'><br>
+> git add \<file>
+
+<img src='./img/Tracked2.PNG'  width='500'><br>
+
+## Staging Modified Files
+ <img src='./img/staged.PNG'  width='500'><br>
+  <img src='./img/staged2.PNG'  width='500'><br>
